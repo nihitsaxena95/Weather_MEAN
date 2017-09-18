@@ -1,0 +1,14 @@
+<div class="jumbotron">
+	<div class="container">
+	<h1>WEATHER</h1>
+	
+	<searchcity (weatherOut)="getWeather($event)"></searchcity>
+
+<div class="row">
+				<div class="col-md-12">
+<searchresult *ngIf="weatherData" [weatherData]="weatherData"></searchresult>	
+</div>
+</div>
+	</div>
+	</div>
+	<welcome></welcome>

@@ -1,0 +1,18 @@
+<!-- <form class="form-group container">
+<h3>Search</h3> <br>
+<input class="form-control" type="text" name="search" />
+<button class="form-control btn btn-primary" (click)="getWeather()">Search</button>
+<span><b style="color: red">{{mess}}</b></span>
+</form> -->
+
+<div class="row">
+			<div class="col-md-12 mainjumbo">
+				<h3>Find a Forecast</h3>
+				<br>
+				<div class="input-group">
+					<input type="text" class="form-control" [(ngModel)]="cityname"  name="search" placeholder="Enter a town, City or Country">
+				<div class="input-group-addon link"><a  (click)="getWeather()"> Search</a></div>
+			</div>
+		<p>{{mess}}</p>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+<!-- <b>{{item.day.maxtemp_c}}</b>
+		{{item.day.mintemp_c}}
+		<p>{{item.day.condition.text}}</p>
+		<img src="{{item.day.condition.icon}}">
+		{{item.date}}
+		<button *ngIf="!flag" (click)="setFav(item)"> Add Favourite</button>
+	<button *ngIf="flag">Favourite</button> -->
+
+	<!-- <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="{{item.day.condition.icon}}" style="width: 100%;height: 100%" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Maximum : {{item.day.maxtemp_c}}</h4><br>
+    <h4 class="card-title"></h4>
+    <p class=" card-text lead">{{item.date}}</p>
+    <p class="card-text">{{item.day.condition.text}}</p>
+    <a (click)="setFav(item)" class="btn btn-primary">Add to Favourite</a>
+  </div>
+</div> -->
+<ul class="list-group headlist">
+						<li class="list-group-item"><h3>{{item.day.maxtemp_c}} &#8451;</h3></li>
+						<li class="list-group-item"><h4>{{item.day.mintemp_c}} &#8451;</h4></li>
+						<li class="list-group-item"><img class="card-img-top" src="{{item.day.condition.icon}}" alt="Card image cap"></li>
+						<!-- <li class="list-group-item"><p class="lead">{{item.day.condition.text}}</p></li> -->
+						<li class="list-group-item">{{item.date}}</li>
+						<li class="list-group-item"><button (click)="setFav(item)" class="btn btn-success">Add to Favourite</button></li>
+					</ul>

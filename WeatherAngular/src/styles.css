@@ -1,0 +1,258 @@
+.navbar {
+	margin-bottom: 0px; 
+}
+.navig {
+	background-color: #226083;
+}
+.navig a {
+	color: white;
+}
+.navig span {
+	color: white;
+}
+.navig a:hover {
+	color: #226083;
+}
+.navig a:active {
+	color: #226083;
+}
+.block {
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.block h1 {
+	font-weight: 600;
+	color:#2e6da4;
+	text-align: center;
+}
+body {
+	background-color: #EDEEF3;
+}
+	/*Header Nav Style*/
+	.imgmain {	
+		color: white;
+	}	
+	.img {
+		width: 100%;
+	}
+	.icon-bar {
+		color: white;
+	}
+	.link a {
+		color: white;
+
+	}
+	.link a:hover {
+		text-decoration: none;
+		color: white;	
+	}
+	.navig {
+		margin-bottom: 0px;
+	}
+	.navig span {
+		border: 1px solid white;
+	}
+	.navbar-secondary {
+		background-color: #226083;
+	}
+	.navbar-secondary a {
+		color: white;
+	}
+	.navbar-right li{
+		border-right: 1px solid white;
+	}
+	.navbar-right li a:hover{
+		color: #226083;
+	}
+	.navbar-right:first-child {
+		border-left: 1px solid white;
+	}
+	.active {
+		background-color: rgb(231, 231, 231);
+	}
+	.active a {
+		color: #226083;
+	}
+	/*Header Nav Ends*/
+	/*Jumbotron Hero Start*/
+	.jumbotron {
+		background-image: url("./img/clouds.jpg");
+		color: white;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.jumbotron h1{
+		font-weight: 600;	
+		font-size: 42.996px;
+		text-shadow: 0 1px 2px white;
+	}
+	.jumbotron .col-md-12 {
+		background-color: #226083; 
+	}
+	.jumbotron .mainjumbo {
+		margin-top: 20px;	
+		background-color: rgb(231, 231, 231);
+		color: #226083;
+	}
+	.jumbotron .col-md-6 {
+		margin-top: 20px;	
+		background-color: rgb(231, 231, 231);
+		color: #226083;
+	}
+	.jumbotron .col-md-6 .lead {
+		margin-bottom: 3px;
+	}
+	.input-group-addon {
+		background-color: #226083;
+		color: white;
+	}
+	.jumbotron .col-md-6 h3 {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.jumbotron .col-md-6 p {
+		margin-bottom: 10px;
+
+	}
+	.fav {
+		border: 1px solid rgb(231, 231, 231);
+		margin: 10px;
+		background-color: #fff;
+		padding-bottom: 20px;
+		border-radius: 4px; 
+	}
+	.favmain {
+		padding-left: 20px;
+		border-bottom: 1px solid grey;
+	}
+	.col-md-2 p {
+		font-size: 15px;
+	}
+	.col-md-2 button {
+		margin-top: 10px;
+		color:#fff;
+		border: 1px solid #fff;
+		background-color: #226083;
+	}
+	/*.btn-sm {
+		background-color: rgb(231, 231, 231);
+	}*/
+	.jumbotron h3 {
+		font-weight: 600;
+		margin-bottom: 0px;
+	}
+	.maintemp {
+		font-size: 50px;
+	}
+
+	.list-group-item {
+		background-color: inherit;
+		border: 0px;
+	}
+	.lead {
+		font-weight: 600;
+	}
+	.headlist {
+		padding-left: 27px;
+		padding-right: 27px;
+	}
+	.headlist li{
+		padding: 0px;
+	}
+
+	/*Jumbotron Ends*/
+	/*Main Content Starts*/
+	.info {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px; 
+	}
+	.info .container {
+		border-top: 1px solid #ddd;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.info h3 {
+		font-weight: 600;
+		font-size: 25px;
+		color: #226083;
+	}
+	.info p {
+		font-size: 16px;
+	}
+	.info span {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.info a {
+		color:#226083;
+	}
+	.thumbnail a {
+		color: #226083;
+	}
+	/*Main Content Ends*/
+	/*footer Styles*/
+	.footer .container {
+		border-top: 1px solid black;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.footer .col-md-6 li {
+		font-size: 30px;
+	}
+	.footer .col-md-6 li:first-child {
+		font-size: 20px;
+	}
+	.footer .col-md-6 {
+		margin-top: 10px;
+		margin-bottom: 20px; 
+	}
+	/*Footer Ends*/
+	/* Portrait & landscape phone */
+@media only screen   and(width: 1200px), only screen   and(height: 768px) {
+	
+	}
+
+@media (max-width: 768px) {
+	.headlist {
+			padding-left: 0px;
+			padding-right: 0px;
+			
+		}
+		.row {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+}
+@media (max-width: 480px) {
+	.headlist {
+			margin-left: 20px;
+			margin-right: 20px;
+			
+		}
+		.main {
+			margin-left: 45px;
+			margin-right: 45px;
+		}
+		.list-inline {
+			margin-left: 0px;
+		}
+		.jumbotron .col-md-10 {
+			padding-left: 40px;
+		}
+		.info .col-md-4 {
+			padding: 20px;
+		}
+		.row {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+}
+
+
+/* Landscape phone to portrait tablet */
+
+/* Large desktop */

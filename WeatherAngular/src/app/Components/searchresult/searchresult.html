@@ -1,0 +1,26 @@
+<!-- <div *ngIf="weatherData" class="container">
+<div class="col-md-2">
+<img src="{{weatherData.current.condition.icon}}">
+<h2>{{weatherData.location.name}}</h2><h4>{{weatherData.location.country}}</h4>
+</div>
+<ul class="list-inline-item">
+	<li class="list-inline-item col-md-3" *ngFor="let item of weatherData.forecast.forecastday">
+		<searchresultlist *ngIf="item" [item]="item" (setitem)="setFav(weatherData,$event)"></searchresultlist>
+	</li>
+</ul>
+</div> -->
+
+
+
+			
+				<ul class="list-inline row">
+				<li class="list-inline-item main col-md-12">
+					<h2 style="font-weight: 600;">&nbsp;{{weatherData.location.name}}, {{weatherData.location.country}}</h2>
+				</li>
+				<li *ngFor="let item of weatherData.forecast.forecastday" class="list-inline-item col-md-2">
+					<searchresultlist *ngIf="item" [item]="item" (setitem)="setFav(weatherData,$event)"></searchresultlist>
+				</li>
+				</ul>
+				
+	
+

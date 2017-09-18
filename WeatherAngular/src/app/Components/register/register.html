@@ -1,0 +1,89 @@
+<div class="container">
+<!-- <div class="col-md-5">
+	<h1>Register to Your Account</h1><br>
+				  <form>
+					<input type="text" [(ngModel)]="data.username" name="username" placeholder="Username"><br>
+					<input type="password" [(ngModel)]="data.password" name="password" placeholder="Password"><br>
+					<br>
+					<input type="email" [(ngModel)]="data.email" name="email" placeholder="Email"><br>
+					<br>
+					<input type="text" [(ngModel)]="data.phone" name="phone" placeholder="phone number"><br>
+					<br>
+					<input type="submit" name="login" (click)="register()" class="login loginmodal-submit" value="Register">
+				  </form>
+					<br>
+					<p class="lead"  style="color:red">{{mess.message}}</p>
+				  <div class="login-help">
+					<a routerLink="">Login</a>
+				  </div>
+				  </div> -->
+				  <div style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading" style="background-color: #5cb85c;color: white">
+                            <div class="panel-title">Sign Up</div>
+                            
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form">
+                                
+                                <div *ngIf="mess.message" class="alert alert-danger">
+                                    <p>{{mess.message}}</p>
+                                    <span></span>
+                                </div>
+                                    
+                                
+                                  
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" [(ngModel)]="data.email" class="form-control" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">Username</label>
+                                    <div class="col-md-9">
+                                        <input type="text" [(ngModel)]="data.username" class="form-control" name="username" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Phone</label>
+                                    <div class="col-md-9">
+                                        <input type="text" [(ngModel)]="data.phone" class="form-control" name="lastname" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" [(ngModel)]="data.password" class="form-control" name="passwd" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-signup" (click)="register()" type="button" class="btn btn-info btn-block">Sign Up</button>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+                                    
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button type="button" class="btn btn-success btn-block	" routerLink="">Sign In </button>
+                                    </div>                                           
+                                        
+                                </div>
+                                
+                                
+                                
+                            </form>
+                         </div>
+                    </div>
+
+               
+               
+                
+         </div> 
+    
+				  </div>
